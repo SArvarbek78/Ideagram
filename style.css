@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+body {
+    background-image: url(Images/bwin-white-jersey-cristiano-ronaldo-iphone-1mij6b7is0i5sydf.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
