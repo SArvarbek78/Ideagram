@@ -1,24 +1,4 @@
 
-button:hover {
-    background-color: #218838;
-}
-body {
-    background-image: url(Images/bwin-white-jersey-cristiano-ronaldo-iphone-1mij6b7is0i5sydf.jpg);
-    body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f8f9fa;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #212529;
-    color: white;
-    padding: 20px;
-    font-size: 24px;
-    font-weight: bold;
-}
 
 .navbar {
     display: flex;
