@@ -3,39 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mening Saytim</title>
+    <title>Futbolchilar Sayti</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <h1>Xush kelibsiz!</h1>
+        Futbolchilar Haqida Ma'lumot
     </header>
-    <main>
-        <p>Bu mening birinchi veb-saytim! Va bu saytga Cristiano Ronaldo qirol va HALA MADRID deb kiring!</p>
-        <button onclick="salom()">Agar sen saytning qanday ishlashi haqida bilmoqchi bo'lsan meni bos</button>
-    </main>
-    <script src="script.js"></script>
+
+    <nav class="navbar">
+        <a href="index.html">Bosh sahifa</a>
+        <a href="ronaldo.html">Ronaldo</a>
+        <a href="messi.html">Messi</a>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <img src="ronaldo.jpg" alt="Cristiano Ronaldo">
+            <h2>Cristiano Ronaldo</h2>
+            <p>Dunyoning eng mashhur futbolchilaridan biri.</p>
+            <button onclick="location.href='ronaldo.html'">Batafsil</button>
+        </div>
+
+        <div class="card">
+            <img src="messi.jpg" alt="Lionel Messi">
+            <h2>Lionel Messi</h2>
+            <p>Ko‘plab mukofotlar sohibi va futbol afsonasi.</p>
+            <button onclick="location.href='messi.html'">Batafsil</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        © 2025 Futbolchilar Sayti. Barcha huquqlar himoyalangan.
+    </footer>
+
 </body>
 </html>
-<img src="c:\Users\Samsung\Downloads\images.jpg" alt="Bu Futbolchilar ro'yxati" width="300">
-<nav>
-    <a href="index.html">Bosh sahifa</a> | 
-    <a href="Sahifa2.html">Lionel Messi haqida</a>
-</nav>
-<nav>
-    <a href="index.html">Bosh sahifa</a> | 
-    <a href="Sahifa3.html">Cristiano Ronaldo haqida</a>
-</nav>
-<nav>
-    <a href="index.html">Bosh sahifa</a> | 
-    <a href="Sahifa4.html">Neymar Jr haqida</a>
-</nav>
-<nav>
-    <a href="index.html">Bosh sahifa</a> | 
-    <a href="Sahifa5.html">Kylian Mbappe haqida</a>
 
-</nav>
-<nav>
-    <a href="index.html">Bosh sahifa</a> | 
-    <a href="Sahifa6.html">Erling Haalad haqida</a>
-</nav>
+   
