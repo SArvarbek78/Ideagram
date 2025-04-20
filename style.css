@@ -247,3 +247,27 @@ body {
     margin: 0;
     cursor: pointer;
 }
+
+/* Bosh sahifa - index.html uchun */
+body.index {
+    background-image: url('https://chatgpt.com/s/m_68050490da1c8191b069fd9dbff53ed1');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Ronaldo sahifasi uchun */
+body.Sahifa2 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDLODrAJXNf2Dq-vHbt3jHoQyu1Ja1h46LS_N-I5WIjY-eJaQgLwsHDSeYr_b7yE8p6II&usqp=CAU');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Messi sahifasi uchun */
+body.sahifa3 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCEuiCmjqaRUAIfDSeG-H4qRR4edrR6KBbWw&s');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
