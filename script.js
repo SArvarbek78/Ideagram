@@ -1,5 +1,5 @@
 function salom() {
-    alert("Ushbu Web Site Cristiano Ronaldo uchun atalgan!Va bu mening birinchi saytim.Bu saytda faqatgina Cristiano Ronaldo haqida yozilgan ammo kelajakda bu sayt juda rivojlanadi!");
+    alert("This Website's name is Ideagram");
 }
 let w, h;
 const ctx = canvas.getContext("2D");
@@ -147,6 +147,27 @@ function noise(x, y, t = 101) {
              
     return w0 + w1;
 }
+
+<script>
+  const videos = [
+    { title: "Fizika: Harakat qonunlari", videoId: "https://youtu.be/ZAqIoDhornk?si=ycNJZr4SJ2i7FaE0" },
+    { title: "Kimyo: Atom tuzilishi", videoId: "https://youtu.be/5iTOphGnCtg?si=NLpXLS-6A9P6__iK" },
+    { title: "Biologiya: Hujayra", videoId: "https://youtu.be/3tisOnOkwzo?si=IJypahYIMdZWXHTO" }
+  ];
+
+  const videoContainer = document.querySelector('.video-container');
+  videos.forEach(video => {
+    const videoItem = document.createElement('div');
+    videoItem.classList.add('video-item');
+    
+    videoItem.innerHTML = `
+      <h3>${video.title}</h3>
+      <iframe src="https://www.youtube.com/embed/${video.videoId}" allowfullscreen></iframe>
+    `;
+    
+    videoContainer.appendChild(videoItem);
+  });
+</script>
 
 
         
