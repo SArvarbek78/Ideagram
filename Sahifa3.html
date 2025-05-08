@@ -62,7 +62,8 @@
 
   <script>
     const API_KEY = 'a7138aaf1d5c4e1a9e3e099033fbb8dd';
-    const API_URL = 'https://api.football-data.org/v4/matches?status=SCHEDULED&limit=5';
+    const API_URL = 'https://cors-anywhere.herokuapp.com/https://api.football-data.org/v4/matches?status=SCHEDULED&limit=5';
+
 
     fetch(API_URL, {
       headers: { 'X-Auth-Token': API_KEY }
