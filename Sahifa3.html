@@ -31,15 +31,68 @@
 <body>
 
     <main>
-        <p> " [ a ] ​​( ispancha talaffuzi  :  [ ljoˈnel anˈdɾez ˈmesi] (tinglash)о файле; родился 24 июня 1987, Росарио, Аргентина) — аргентинский футболист, нападающий и капитан клуба MLS «Интер Майами», капитан сборной Аргентины. Чемпион мира, двукратный обладатель Кубка Америки, олимпийский чемпион. Считается одним из лучших футболистов всех времён[7][8][9].
+        <p> " <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upcoming Matches</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { padding: 10px; border: 1px solid #ccc; text-align: center; }
+    th { background-color: #f2f2f2; }
+  </style>
+</head>
+<body>
 
-Лучший бомбардир в истории чемпионата Испании, «Барселоны», «Интер Майами» и сборной Аргентины. Восьмикратный обладатель «Золотого мяча»[b] и шестикратный — «Золотой бутсы». Воспитанник академии «Барселоны», вместе с этим клубом выиграл десять титулов чемпиона Испании, четыре Лиги чемпионов УЕФА, семь Кубков Испании, восемь Суперкубков Испании, три Суперкубка УЕФА и три чемпионата мира среди клубов. Двукратный чемпион Франции и обладатель Суперкубка Франции в составе «Пари Сен-Жермен».
+  <h2>Upcoming Football Matches</h2>
+  <table id="matches-table">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Home Team</th>
+        <th>Away Team</th>
+        <th>Competition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td colspan="4">Loading matches...</td></tr>
+    </tbody>
+  </table>
 
-В возрасте 13 лет вместе с родителями переехал в Испанию, чтобы присоединиться к молодёжной команде «Барселоны», в октябре 2004 года дебютировал за основной состав этого клуба. В течение своих первых лет в «Барселоне» ему удалось стать неотъемлемым игроком стартового состава, а в сезоне 2008/09 Месси вместе с клубом выиграл свой первый «требл» и «Золотой мяч». Он становился обладателем «Золотого мяча» в течение следующих трёх лет и стал первым игроком, получившим эту награду четыре раза подряд[10]. В сезоне 2011/12 Месси установил рекорд по количеству голов, забитых за один сезон в чемпионате Испании, а также во всей Европе[11]. В сезоне 2014/15 он стал лучшим бомбардиром чемпионата Испании за всю историю и во второй раз выиграл «требл» со своим клубом. В 2018 году стал капитаном «Барселоны», а в 2019 году в шестой раз получил «Золотой мяч», установив рекорд по их количеству у одного игрока. В 2021 году контракт аргентинца с «Барселоной» завершился и из-за финансового положения каталонского клуба не был продлён. В связи с этим Месси стал свободным агентом и бесплатно перешёл во французский «Пари Сен-Жермен». В 2022 году побил рекорд немецкого футболиста Лотара Маттеуса по числу матчей на чемпионатах мира[12].
+  <script>
+    const API_KEY = 'a7138aaf1d5c4e1a9e3e099033fbb8dd';
+    const API_URL = 'https://api.football-data.org/v4/matches?status=SCHEDULED&limit=5';
 
-Argentina yoshlar terma jamoasi tarkibida Messi 2005 yilgi jahon chempioni bo'ldi va o'sha yili Argentina asosiy jamoasida debyut qildi . 2007 yilda u Amerika kubogida kumush medalni qo'lga kiritdi va turnirning eng yaxshi yosh futbolchisi sifatida ham tan olindi. U23 terma jamoasi tarkibida 2008 yilgi Olimpiya chempioni bo'ldi . 2011 yildan beri, terma jamoa sardori sifatida Messi ketma-ket uchta yirik turnir finalida ishtirok etdi: 2014 yilgi Jahon chempionati va 2015 va 2016 yilgi Amerika kubogi , ammo barcha holatlarda u va uning jamoasi mag'lubiyatga uchradi. 2016 yilda u xalqaro futboldagi faoliyatini yakunlaganini e'lon qildi, biroq keyinroq terma jamoaga qaytdi va 2018 yilgi Jahon chempionati va 2019 yilgi Amerika kubogida ishtirok etdi va u erda jamoasi bilan uchinchi o'rinni egalladi. Messi o'z terma jamoasi bilan 2021 yilgi Amerika kubogini yutib , turnirning eng yaxshi to'purari, eng yaxshi assistenti va eng yaxshi futbolchisiga aylandi  . 2022 yilda u Finalissima va Jahon chempionatida g'olib chiqdi  .
+    fetch(API_URL, {
+      headers: { 'X-Auth-Token': API_KEY }
+    })
+    .then(response => response.json())
+    .then(data => {
+      const tableBody = document.querySelector('#matches-table tbody');
+      tableBody.innerHTML = ''; // tozalash
 
-Dunyoning eng mashhur sportchilaridan biri hisoblangan, 2006 yildan beri u Adidas sport kiyimlari kompaniyasining asosiy reklama yuzlaridan biri bo'lib kelgan. 2008 yildan beri u eng ko'p maosh oluvchi futbolchilardan biri [ 13 ] . 2019 yilda Forbes argentinalikni dunyodagi eng ko'p maosh oluvchi sportchi sifatida tan oldi [ 14 ] . Time jurnali uni 2011, 2012 va 2023 yillarda dunyodagi eng nufuzli 100 kishi ro'yxatiga kiritdi . 2020 va 2023 yillarda Messi Laureus tomonidan yilning eng yaxshi sportchisi deb topildi va bu sovrinni qo'lga kiritgan birinchi futbolchiga aylandi. O'sha yili Forbes Messini o'z faoliyati davomida bir milliard dollardan ko'proq daromad qilgan tarixdagi ikkinchi futbolchi deb atadi [ 15 ] "
+      data.matches.forEach(match => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${new Date(match.utcDate).toLocaleString()}</td>
+          <td>${match.homeTeam.name}</td>
+          <td>${match.awayTeam.name}</td>
+          <td>${match.competition.name}</td>
+        `;
+        tableBody.appendChild(row);
+      });
+    })
+    .catch(error => {
+      console.error('Error loading matches:', error);
+      document.querySelector('#matches-table tbody').innerHTML =
+        '<tr><td colspan="4">Failed to load data.</td></tr>';
+    });
+  </script>
+
+</body>
+</html>
+ "
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lionel Messi</title>
