@@ -300,3 +300,41 @@ body {
     margin: 0;
     cursor: pointer;
     }
+
+/* Hamma video konteynerlari qator bo‘lib joylashsin */
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Har bir video kichraytirilsin */
+.video-item {
+    flex: 1 1 300px;
+    max-width: 100%;
+}
+
+/* YouTube iframe */
+iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+}
+
+/* Mobil uchun media query */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .video-item {
+        flex: 1 1 100%;
+    }
+
+    iframe {
+        height: 180px;
+    }
+}
